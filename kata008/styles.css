@@ -1,0 +1,62 @@
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.scoring {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  margin: 40px 0;
+  width: 500px;
+}
+
+.frame {
+  border-right: 1px solid black;
+  width: 50px;
+}
+.frame:last-child {
+  border: 0
+}
+
+.rolls {
+  display: flex;
+  justify-content: space-around;
+}
+
+.roll-1, .roll-2 {
+  width: 50%;
+  text-align: center;
+}
+
+.roll-2 {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.roll-strike {
+  background-color: black;
+}
+
+.roll-spare {
+  background:linear-gradient(to bottom right,white 50%,black 50%);
+}
+
+.frame-score {
+  text-align: center;
+  width: 100%;
+}
+
+.bowling-gif {
+  margin: 40px 0;
+}
