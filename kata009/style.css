@@ -1,0 +1,128 @@
+:root {
+  --shadow-color: #8A919D;
+  --white-color: #EAEBEE;
+  --gray-light: #D0D5DB;
+  --gray-color: #515862;
+  --black-color: #050606;
+}
+.container {
+  height: 300px;
+  width: 600px;
+  margin: 0 auto;
+}
+.control {
+  border-radius: 26px;
+  border: 10px solid var(--black-color);
+  height: 100%;
+  width: 100%;
+}
+.control__front-face {
+  background-color: var(--white-color);
+  border-radius: 15px;
+  box-shadow: 0px 40px 0px var(--shadow-color);
+  display: flex;
+  height: 260px;
+  width: 100%;
+}
+.control__black-face {
+  background-color: var(--black-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+  margin: 30px 20px;
+  width: 560px;
+}
+.control__pad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.control__pad-horizontal,
+.control__pad-vertical {
+  background-color: #262B2F;
+  border-radius: 10px;
+  box-shadow: 0px 6px 0px var(--gray-color);
+  position: absolute;
+}
+.control__pad-horizontal {
+  height: 40px;
+  width: 70%;
+}
+.control__pad-vertical {
+  height: 70%;
+  width: 40px;
+}
+.control__start {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.control__gray-element:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.control__gray-element:last-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.control__gray-element {
+  background-color: var(--gray-color);
+  border: 4px solid var(--gray-color);
+  border-radius: 6px;
+  height: 20px;
+  width: 80%;
+}
+.control__gray-element:nth-last-child(2) {
+  background-color: var(--white-color);
+  border: 4px solid var(--gray-light);
+  height: 40px;
+}
+.control__start-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.control__select-button, .control__start-button {
+  background-color: var(--black-color);
+  border-radius: 10px;
+  height: 10px;
+  width: 40px;
+}
+.control__ab-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+}
+.control__button-container {
+  background-color: var(--gray-light);
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 40px;
+  position: relative;
+  width: 60px;
+}
+.control__a-button, .control__b-button {
+  background-color: #F32100;
+  box-shadow: 0px 7px 0px #BE1903;
+  border-radius: 50%;
+  bottom: 10px;
+  height: 45px;
+  position: absolute;
+  width: 45px;
+}
+
+.control__button--pressed {
+  bottom: 3px;
+  box-shadow: none;
+}

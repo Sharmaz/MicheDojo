@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>NES Controller</title>
+</head>
+<body>
+  <div class="container">
+    <div class="control">
+      <div class="control__front-face">
+        <div class="control__black-face">
+          <div class="control__pad">
+            <div class="control__pad-horizontal"></div>
+            <div class="control__pad-vertical"></div>
+          </div>
+          <div class="control__start">
+            <div class="control__gray-element"></div>
+            <div class="control__gray-element"></div>
+            <div class="control__gray-element"></div>
+            <div class="control__gray-element control__start-buttons">
+              <div class="control__select-button"></div>
+              <div class="control__start-button"></div>
+            </div>
+            <div class="control__gray-element"></div>
+          </div>
+          <div class="control__ab-buttons">
+            <div class="control__button-container">
+              <div class="control__a-button"></div>
+            </div>
+            <div class="control__button-container">
+              <div class="control__b-button"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+
+    const buttonA = document.querySelector('.control__a-button');
+    const buttonB = document.querySelector('.control__b-button');
+
+    function buttonPress(button) {
+      button.addEventListener('mousedown', ()=> {
+        button.classList.add('control__button--pressed');
+      });
+      button.addEventListener('mouseup', ()=> {
+        button.classList.remove('control__button--pressed');
+      });
+    }
+
+    buttonPress(buttonA);
+    buttonPress(buttonB);
+    
+  </script>
+</body>
+</html>
