@@ -1,0 +1,133 @@
+body {
+  background-color: #0E0160;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.player-select-label {
+  background: url('./images/PlayerSelect.png');
+  height: 24px;
+  width: 224px;
+}
+
+.world-map {
+  background: url('./images/Map.png');
+  height: 184px;
+  width: 338px;
+}
+
+.player-selection {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 380px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-label {
+  background: url('./images/1P.png');
+  height: 24px;
+  width: 38px;
+}
+
+.player-character-name {
+  background: url('./images/Names/Ryu.png');
+  height: 24px;
+  width: 60px;
+}
+
+.player-character-image {
+  background: url('./images/Characters/Portraits/Ryu.png');
+  height: 160px;
+  width: 112px;
+}
+
+.characters {
+  background-color: #808080;
+  height: 128px;
+  width: 242px;
+}
+
+.characters-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.character {
+  width: 38px;
+  height: 60px;
+  margin: 0 1px;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  margin: 2px 1px;
+}
+
+.ryu {
+  background: url('./images/Characters/Selected/Ryu.png');
+  
+}
+
+.current::after{
+  content: '';
+  background:url('./images/Characters/Selected/Selector.png');
+  bottom: 0px;
+  left: -1px;
+  position: absolute;
+  width: 42px;
+  height: 70px;
+  z-index: 10;
+}
+
+.honda {
+  background: url('./images/Characters/Selected/Honda.png');
+}
+
+.blanka {
+  background: url('./images/Characters/Selected/Blanka.png');
+}
+.guile {
+  background: url('./images/Characters/Selected/Guile.png');
+}
+.barlog {
+  background: url('./images/Characters/Selected/Balrog.png');
+}
+.vega {
+  background: url('./images/Characters/Selected/Vega.png');
+}
+
+.ken {
+  background: url('./images/Characters/Selected/Ken.png');
+}
+
+.chunli {
+  background: url('./images/Characters/Selected/ChunLi.png');
+}
+
+.zangief {
+  background: url('./images/Characters/Selected/Zangief.png');
+}
+
+.dhaslim {
+  background: url('./images/Characters/Selected/Dhalsim.png');
+}
+
+.sagat {
+  background: url('./images/Characters/Selected/Sagat.png');
+}
+
+.bison {
+  background: url('./images/Characters/Selected/Bison.png');
+}
