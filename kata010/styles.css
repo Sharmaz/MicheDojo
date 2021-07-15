@@ -41,13 +41,12 @@ body {
 }
 
 .player-character-name {
-  background: url('./images/Names/Ryu.png');
-  height: 24px;
-  width: 60px;
+  background-repeat: no-repeat;
+  height: 26px;
+  width: 126px;
 }
 
 .player-character-image {
-  background: url('./images/Characters/Portraits/Ryu.png');
   height: 160px;
   width: 112px;
 }
@@ -101,7 +100,7 @@ body {
 .guile {
   background: url('./images/Characters/Selected/Guile.png');
 }
-.barlog {
+.balrog {
   background: url('./images/Characters/Selected/Balrog.png');
 }
 .vega {
@@ -130,4 +129,119 @@ body {
 
 .bison {
   background: url('./images/Characters/Selected/Bison.png');
+}
+
+.color-flags {
+  height: 184px;
+  position: absolute;
+  width: 338px;
+}
+.spain {
+  background: url('./images/Flags/Spain.png');
+  display: none;
+  height: 44px;
+  left: 0;
+  position: absolute;
+  top: 28px;
+  width: 36px;
+}
+
+.ussr {
+  background: url('./images/Flags/USSR.png');
+  display: none;
+  height: 44px;
+  left: 67PX;
+  position: absolute;
+  top: 44px;
+  width: 36px;
+}
+
+.india {
+  background: url('./images/Flags/India.png');
+  display: none;
+  height: 44px;
+  left: 74PX;
+  position: absolute;
+  top: 100px;
+  width: 40px;
+}
+
+.china {
+  background: url('./images/Flags/China.png');
+  display: none;
+  height: 44px;
+  left: 138PX;
+  position: absolute;
+  top: 40px;
+  width: 38px;
+}
+
+.thailand {
+  background: url('./images/Flags/ThaiLand.png');
+  display: none;
+  height: 44px;
+  left: 128PX;
+  position: absolute;
+  top: 136px;
+  width: 38px;
+}
+
+.japan-north {
+  background: url('./images/Flags/Japan.png');
+  display: none;
+  height: 44px;
+  right: 110PX;
+  position: absolute;
+  top: 60px;
+  width: 38px;
+}
+
+.japan-south {
+  background: url('./images/Flags/Japan.png');
+  display: none;
+  height: 44px;
+  right: 126PX;
+  position: absolute;
+  top: 112px;
+  width: 38px;
+}
+
+.usa-west {
+  background: url('./images/Flags/USA.png');
+  display: none;
+  height: 44px;
+  right: 64PX;
+  position: absolute;
+  top: 44px;
+  width: 38px;
+}
+
+.usa-north {
+  background: url('./images/Flags/USA.png');
+  display: none;
+  height: 44px;
+  right: 12PX;
+  position: absolute;
+  top: 28px;
+  width: 38px;
+}
+
+.usa-east {
+  background: url('./images/Flags/USA.png');
+  display: none;
+  height: 44px;
+  right: 6PX;
+  position: absolute;
+  top: 92px;
+  width: 38px;
+}
+
+.brazil {
+  background: url('./images/Flags/Brazil.png');
+  display: none;
+  height: 44px;
+  right: 26PX;
+  position: absolute;
+  top: 144px;
+  width: 42px;
 }
